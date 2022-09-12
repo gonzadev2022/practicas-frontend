@@ -74,7 +74,6 @@ body{
 }
 
 .hero__paragraph{
-    margin: 16px 0;
     width: 90%;
     margin: 16px auto;
     line-height: 1.5;
@@ -212,12 +211,13 @@ body{
     font-weight: 500;
     line-height: 1.7;
     margin: 15px 0 30px;
+    max-width: 350px;
 }
 
 .footer__form{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: flex-start;
     gap: 15px;
 }
 
@@ -230,6 +230,7 @@ body{
     border: none;
     border-radius: 10px;
     padding: 16px 10px;
+    max-width: 315px;
 }
 
 .footer__cta{
@@ -249,7 +250,9 @@ body{
 
 .footer__logo{
     background-color: var(--very-pale-blue);
-    width: 70%;
+    min-width: 150px;
+    width: 45%;
+    max-width: 160px;
     border-radius: 8px;
     padding: 5px;
     margin-bottom: 15px;
@@ -290,3 +293,79 @@ body{
     display: block;
 }
 
+/* VERSION ESCRITORIO */
+
+@media (min-width: 768px){
+
+    .hero{
+        --wave-bottom: url('../images/bg-section-top-desktop-1.svg');
+    }
+
+    .hero__title{
+        font-size: 30px;
+    }
+
+    .hero__paragraph{
+        width: 50%;
+    }
+
+    .cta{
+        padding: 18px 70px;
+    }
+
+    .hero__numbers{
+        flex-direction: row;
+        justify-content: space-evenly;  
+    }
+
+    .section--white{
+        background-color: #fff;
+        position: relative;
+        --wave-top: url('../images/bg-section-bottom-desktop-1.svg');
+        --wave-bottom: url('../images/bg-section-top-desktop-2.svg');
+    }
+
+    .section__container{
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        gap: 50px;
+        --padding-container: 70px 0;
+    }
+
+    .section__container--white{
+        flex-direction: row;
+        --padding-container: 200px 0;
+
+    }
+
+    .section__texts{
+        width: 50%;
+        text-align: start;
+    }
+    
+    .subtitle{
+        font-size: 30px;
+    }
+
+    .footer__container{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .footer__newsletter{
+        width: 50%;
+        
+    }
+
+    .footer__content{
+        margin: 0;
+        width: 50%;
+    }
+
+    .footer__form{
+        flex-wrap: nowrap;
+    }
+   
+}
