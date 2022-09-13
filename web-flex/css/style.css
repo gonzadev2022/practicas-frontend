@@ -2,7 +2,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-/*---------------- VARAIBLES -------------- */
+/*---------------- VARIABLES -------------- */
 :root{
     --poppins: 'Poppins', sans-serif;
     --open-sans: 'Open Sans', sans-serif;
@@ -46,7 +46,7 @@ body{
 
 .hero__logo{
     width: 45%;
-    max-width: 160px;
+    max-width: 200px;
 }
 
 .hero__huddle{
@@ -58,10 +58,15 @@ body{
     color: var(--light-pink);
     text-decoration: none;
     border: 1px solid;
-    padding: 6px 16px;
+    padding: 8px 32px;
     border-radius: 30px;
     font-weight: 600;
     box-shadow: 0 0 1px;
+}
+
+.hero__cta:hover{
+    background-color: var(--pink);
+    color: #fff;
 }
 
 .hero__main{
@@ -89,6 +94,12 @@ body{
     margin-top: 16px;
     font-weight: 600;
 }
+    
+
+.cta:hover{
+    background-color: var(--light-pink);
+
+}
 
 .hero__picture{
     margin-top: 80px;
@@ -96,7 +107,7 @@ body{
 
 .hero__img{
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     display: block;
 }
@@ -171,14 +182,19 @@ body{
 }
 
 .section__texts{
-    margin-top: 50px;
+    margin: 50px auto 0;
     text-align: center;
+    max-width: 450px;
+    /* margin-top: 50px; */
+    /* text-align: center; */
 }
 
 .subtitle{
     margin-bottom: 16px;
     font-family: var(--poppins);
 }
+
+
 
 /*---------------- SECCION PREGUNTAS -------------- */
 
@@ -230,7 +246,7 @@ body{
     border: none;
     border-radius: 10px;
     padding: 16px 10px;
-    max-width: 315px;
+    max-width: 350px;
 }
 
 .footer__cta{
@@ -242,8 +258,12 @@ body{
     color: #fff;
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
 }
 
+.footer__cta:hover{
+    background-color: var(--light-pink);
+}
 .footer__content{
     margin-top: 60px;
 }
@@ -328,6 +348,7 @@ body{
     .section__container{
         flex-direction: row-reverse;
         justify-content: space-evenly;
+        align-items: center;
         gap: 50px;
         --padding-container: 70px 0;
     }
@@ -339,6 +360,7 @@ body{
     }
 
     .section__texts{
+        margin: 0;
         width: 50%;
         text-align: start;
     }
@@ -347,10 +369,16 @@ body{
         font-size: 30px;
     }
 
+    .question{
+        --wave-top: url('../images/bg-section-bottom-desktop-2.svg');
+        --wave-bottom: url('../images/bg-footer-top-desktop.svg');
+    }
+
     .footer__container{
+        --padding-container: 80px 0;
         display: flex;
         flex-direction: row-reverse;
-        justify-content: space-evenly;
+        justify-content: space-between;
         gap: 20px;
     }
 
@@ -366,6 +394,10 @@ body{
 
     .footer__form{
         flex-wrap: nowrap;
+    }
+
+    .footer__social{
+        gap: 25px;
     }
    
 }
