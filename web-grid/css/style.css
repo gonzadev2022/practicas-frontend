@@ -1,0 +1,199 @@
+:root{
+    --dark-gray: hsl(0, 0%, 63%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --very-dark-gray: hsl(0, 0%, 27%);
+    --padding-container: 60px 5px;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container)
+}
+
+.main{
+    display: grid;
+    max-width: 1400px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, max-content);
+    grid-template-areas: 
+    "main"
+    "cta"
+    "image1"
+    "about"
+    "image2"
+    ;
+} 
+
+.main__hero{
+    grid-area: main;
+    background-image: url('../images/desktop-image-hero-1.jpg');
+    background-size: cover;
+    min-height: 500px;
+    background-position: center;
+}
+
+.main__nav{
+    display: flex;
+}
+
+.main__links{
+    display: none;
+}
+
+.main__logo{
+    margin: 0 auto
+}
+
+.main__icon{
+    cursor: pointer;
+}
+
+.main__controls{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--black);
+    width: 30%;
+    height: 50px;
+    grid-area: main;
+    align-self: end;
+    justify-self: end;
+    cursor: pointer;
+}
+
+.main__control{
+    height: 40%;
+}
+
+.main__buy{
+    grid-area: cta;
+}
+
+.main__content{
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.main__title{
+    font-size: 36px; 
+}
+
+.main__paragraph{
+    margin: 20px 0 40px;
+    line-height: 1.5;
+    color: var(--dark-gray);
+}
+
+.main__cta{
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: var(--black);
+    font-weight: 600;
+}
+
+
+
+.main__bg{
+    min-height: 250px;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.main__icon--arrow{
+    margin-left: 20px; 
+}
+
+.image1{
+    grid-area: image1;
+    background-image: url('../images/image-about-dark.jpg');
+}
+
+.main__about{
+    grid-area: about;
+}
+
+.main__title--about{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.main__paragraph--about{
+    margin-bottom: 0
+}
+
+.image2{
+    grid-area: image2;
+    background-image: url('../images/image-about-light.jpg');
+}
+
+@media (min-width: 768px){
+
+    .main{
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-areas: 
+        "main main main main cta cta cta"
+        "main main main main cta cta cta"
+        "main main main main cta cta cta"
+        "image1 image1 about about about image2 image2"
+        "image1 image1 about about about image2 image2"
+        ;
+    }
+
+    .main__controls{
+        grid-area: cta;
+        justify-self: start;
+        width: 33%;
+        height: 70px;
+    }
+
+    .main__buy{
+        --padding-container: 60px 10px;
+        max-width: 380px;
+        margin: auto;   
+    }
+
+    .main__about{
+        max-width: 380px;
+    }
+
+    .main__icon{
+        display: none;
+    }
+
+    .main__logo{
+        margin: 0;
+    }
+
+    .main__links{
+        padding: 0;
+        display: flex;
+        gap: 25px;
+        list-style: none;
+        margin-left: 10%;
+    }
+
+    .main__link{
+        text-decoration: none;
+        color: var(--white);
+        font-size: 18px;
+    }
+
+
+}
