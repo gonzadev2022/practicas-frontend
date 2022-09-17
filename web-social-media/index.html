@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Proyecto Social Media</title>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <hero class="hero">
+    <div class="hero__container container">
+      <div class="hero__titles">
+        <h2 class="hero__title">Social Media Dashboard</h2>
+        <h4 class="subtitle">Total Followers: 23,004</h4>
+      </div>
+
+      <div class="hero__mode">
+        <h4 class="subtitle">Dark Mode</h4>
+        <div id="toggle"><i class="indicator"></i></div>
+      </div>
+    </div>
+  </hero>
+
+  <main class="main">
+    <section class="section">
+      <div class="section__followers-statistics container">
+
+        <div class="section__card">
+          <div class="section__account">
+            <figure class="section__logo"><img src="images/icon-facebook.svg" alt="logo" class="section__img"></figure>
+            <h4 class="section__nick">@gonza</h4>
+          </div>
+          <div class="section__followers">
+            <h1 class="section__number">1987</h1>
+            <h4 class="section__text">Followers</h4>
+          </div>
+          <div class="section__statistics">
+            <figure class="section__icon"><img src="images/icon-up.svg" alt="logo" class="section__img"></figure>
+            <h4 class="section__statistic">12 Today</h4>
+          </div>
+        </div>
+
+        <div class="section__card">
+          <div class="section__account">
+            <figure class="section__logo"><img src="images/icon-twitter.svg" alt="logo" class="section__img"></figure>
+            <h4 class="section__nick">@gonza</h4>
+          </div>
+          <div class="section__followers">
+            <h1 class="section__number">1044</h1>
+            <h4 class="section__text">Followers</h4>
+          </div>
+          <div class="section__statistics">
+            <figure class="section__icon"><img src="images/icon-up.svg" alt="logo" class="section__img"></figure>
+            <h4 class="section__statistic">99 Today</h4>
+          </div>
+        </div>
+
+        <div class="section__card section__card--instagram">
+          <div class="section__account">
+            <figure class="section__logo"><img src="images/icon-instagram.svg" alt="logo" class="section__img"></figure>
+            <h4 class="section__nick">@gonza</h4>
+          </div>
+          <div class="section__followers">
+            <h1 class="section__number">11k</h1>
+            <h4 class="section__text">Followers</h4>
+          </div>
+          <div class="section__statistics">
+            <figure class="section__icon"><img src="images/icon-up.svg" alt="logo" class="section__img"></figure>
+            <h4 class="section__statistic">1099 Today</h4>
+          </div>
+        </div>
+
+        <div class="section__card section__card--youtube">
+          <div class="section__account">
+            <figure class="section__logo"><img src="images/icon-youtube.svg" alt="logo" class="section__img"></figure>
+            <h4 class="section__nick">@gonza</h4>
+          </div>
+          <div class="section__followers">
+            <h1 class="section__number">1986</h1>
+            <h4 class="section__text">Followers</h4>
+          </div>
+          <div class="section__statistics section__statistics--red">
+            <figure class="section__icon"><img src="images/icon-down.svg" alt="logo" class="section__img"></figure>
+            <h4 class="section__statistic">144 Today</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__overview container">
+        <h2 class="section__title">Overview - Today</h2>
+        
+        <div class="section__cards-overview">
+
+          <div class="section__card-overview"> 
+            <div class="section__card-item">
+              <h4 class="subtitle">Page Views</h4>
+              <h4 class="section__number section__number--overview">87</h4>
+            </div>
+            <div class="section__card-item">
+              <figure class="section__logo"><img src="images/icon-facebook.svg" alt="logo" class="section__img"></figure>
+              <div class="section__statistics">
+                <figure class="section__icon"><img src="images/icon-up.svg" alt="logo" class="section__img"></figure>
+                <h4 class="section__statistic">3%</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="section__card-overview"> 
+            <div class="section__card-item">
+              <h4 class="subtitle">Likes</h4>
+              <h4 class="section__number section__number--overview">52</h4>
+            </div>
+            <div class="section__card-item">
+              <figure class="section__logo"><img src="images/icon-facebook.svg" alt="logo" class="section__img"></figure>
+              <div class="section__statistics section__statistics--red">
+                <figure class="section__icon"><img src="images/icon-down.svg" alt="logo" class="section__img"></figure>
+                <h4 class="section__statistic">2%</h4>
+              </div>
+            </div>
+          </div>
+  
+          <div class="section__card-overview section__card-overview--instagram"> 
+            <div class="section__card-item">
+              <h4 class="subtitle">Likes</h4>
+              <h4 class="section__number section__number--overview">5462</h4>
+            </div>
+            <div class="section__card-item">
+              <figure class="section__logo"><img src="images/icon-instagram.svg" alt="logo" class="section__img"></figure>
+              <div class="section__statistics">
+                <figure class="section__icon"><img src="images/icon-up.svg" alt="logo" class="section__img"></figure>
+                <h4 class="section__statistic">2257%</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="section__card-overview section__card-overview--instagram"> 
+            <div class="section__card-item">
+              <h4 class="subtitle">Profile Views</h4>
+              <h4 class="section__number section__number--overview">52k</h4>
+            </div>
+            <div class="section__card-item">
+              <figure class="section__logo"><img src="images/icon-instagram.svg" alt="logo" class="section__img"></figure>
+              <div class="section__statistics">
+                <figure class="section__icon"><img src="images/icon-up.svg" alt="logo" class="section__img"></figure>
+                <h4 class="section__statistic">1375%</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="section__card-overview"> 
+            <div class="section__card-item">
+              <h4 class="subtitle">Retweets</h4>
+              <h4 class="section__number section__number--overview">117</h4>
+            </div>
+            <div class="section__card-item">
+              <figure class="section__logo"><img src="images/icon-twitter.svg" alt="logo" class="section__img"></figure>
+              <div class="section__statistics">
+                <figure class="section__icon"><img src="images/icon-up.svg" alt="logo" class="section__img"></figure>
+                <h4 class="section__statistic">303%</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="section__card-overview"> 
+            <div class="section__card-item">
+              <h4 class="subtitle">Likes</h4>
+              <h4 class="section__number section__number--overview">507</h4>
+            </div>
+            <div class="section__card-item">
+              <figure class="section__logo"><img src="images/icon-twitter.svg" alt="logo" class="section__img"></figure>
+              <div class="section__statistics">
+                <figure class="section__icon"><img src="images/icon-up.svg" alt="logo" class="section__img"></figure>
+                <h4 class="section__statistic">553%</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="section__card-overview section__card-overview--youtube"> 
+            <div class="section__card-item">
+              <h4 class="subtitle">Likes</h4>
+              <h4 class="section__number section__number--overview">107</h4>
+            </div>
+            <div class="section__card-item">
+              <figure class="section__logo"><img src="images/icon-youtube.svg" alt="logo" class="section__img"></figure>
+              <div class="section__statistics">
+                <figure class="section__icon"><img src="images/icon-down.svg" alt="logo" class="section__img"></figure>
+                <h4 class="section__statistic section__statistics--red">19%</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="section__card-overview section__card-overview--youtube"> 
+            <div class="section__card-item">
+              <h4 class="subtitle">Total Views</h4>
+              <h4 class="section__number section__number--overview">1407</h4>
+            </div>
+            <div class="section__card-item">
+              <figure class="section__logo"><img src="images/icon-youtube.svg" alt="logo" class="section__img"></figure>
+              <div class="section__statistics section__statistics--red">
+                <figure class="section__icon"><img src="images/icon-down.svg" alt="logo" class="section__img"></figure>
+                <h4 class="section__statistic">12%</h4>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/test.js"></script>
+</body>
+</html>
